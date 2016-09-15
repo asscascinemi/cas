@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Cascine Aperte 2016</title>
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' />
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.21.0/mapbox-gl.css' rel='stylesheet' />
+    <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css' rel='stylesheet' />
+    <!-- <link href='./style/base-bits.css' rel='stylesheet' /> -->
+    <!-- <link href='./style/style.css' rel='stylesheet' /> -->
+
+</head>
+
+<body>
+
+    <!-- wrapper -->
+    <div class='col12 contain fill-white clip main-container'>
+
+        <!-- map -->
+        <div id='map' class='map'></div>
+
+        <!-- map controls -->
+        <div class='pin-right pad2 pill'>
+            <a href='#listings' class='col12 button'>Menu</a>
+            <a href='#' id="reset-btn"  class='col12 button'>Reset</a>
+        </div>
+
+        <!-- lateral menu -->
+        <div id='listings' class='col4 pad1 fill-white pin-left offcanvas-left animate listings'>
+            <a href='#' class='fill-darken2 pad1 fa fa-close'></a>
+            <div class="img-wrapper">
+              <a href="http://associazionecascinemilano.org"><img src="img/logo.png" alt="ass-cascine" /></a>
+            </div>
+          <div id="giornate">
+            <h3>Giornate:</h3>
+            <div id="day-switcher" class='rounded-toggle inline'>
+                <input id='sabato' type='radio' name='rtoggle' value='sabato' checked='checked'>
+                <label for='sabato'>Sabato</label>
+                <input id='domenica' type='radio' name='rtoggle' value='domenica'>
+                <label for='domenica'>Domenica</label>
+            </div>
+          </div>
+          <h3>Cascine:</h3>
+          <div id="cascine"></div>
+        </div>
+
+    </div>
+
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.21.0/mapbox-gl.js'></script>
+
+    <!-- <script src='./data/cascine.geojson'></script> -->
+    <!-- <script src='./client.js'></script> -->
+
+<script type="text/javascript" src="transformed.min.js"></script></body>
+
+</html>
